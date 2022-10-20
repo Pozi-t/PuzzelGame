@@ -1,0 +1,50 @@
+﻿<Window x:Class="PuzzelGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PuzzelGame"
+        mc:Ignorable="d"
+        Title="Puzzel" Height="650" Width="500">
+    <Grid x:Name="gameBoard" Width="500" HorizontalAlignment="Left" Height="625">
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Игра">
+                <MenuItem Header="Заново" Click="Restart"></MenuItem>
+                <MenuItem Header="Правила" Click="Specification"></MenuItem>
+                <MenuItem Header="Выйти" Click="Exit"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="example1" Content="" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Background="Green" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Visibility="Visible"/>
+        <Button x:Name="interface1" Content="" HorizontalAlignment="Left" Margin="100,25,0,0" VerticalAlignment="Top" Background="Black" Height="100" Width="100" Cursor="" FontWeight="Normal"/>
+        <Button x:Name="example2" Content="" HorizontalAlignment="Left" Margin="200,25,0,0" VerticalAlignment="Top" Background="Blue" Height="100" Width="100" Cursor="" FontWeight="Normal" FontStyle="Normal" FontSize="0.01"/>
+        <Button x:Name="interface2" Content="" HorizontalAlignment="Left" Margin="300,25,0,0" VerticalAlignment="Top" Background="Black" Height="100" Width="100" Cursor="" FontWeight="Normal"/>
+        <Button x:Name="example3" Content=" " HorizontalAlignment="Left" Margin="400,25,0,0" VerticalAlignment="Top" Background="#FFFD0000" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01"/>
+        <Button x:Name="GameButton01" Content="GameButton 01" HorizontalAlignment="Left" Margin="100,125,0,0" VerticalAlignment="Top" Background="#FF4E4E3A" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" BorderBrush="White"/>
+        <Button x:Name="GameButton03" Content="GameButton 03" HorizontalAlignment="Left" Margin="300,125,0,0" VerticalAlignment="Top" Background="#FF4E4E3A" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" BorderBrush="White"/>
+        <Button x:Name="GameButton21" Content="GameButton 21" HorizontalAlignment="Left" Margin="100,325,0,0" VerticalAlignment="Top" Background="#FF4E4E3A" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" BorderBrush="White"/>
+        <Button x:Name="GameButton23" Content="GameButton 23" HorizontalAlignment="Left" Margin="300,325,0,0" VerticalAlignment="Top" Background="#FF4E4E3A" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" BorderBrush="White"/>
+        <Button x:Name="GameButton41" Content="GameButton 41" HorizontalAlignment="Left" Margin="100,525,0,0" VerticalAlignment="Top" Background="#FF4E4E3A" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" BorderBrush="White"/>
+        <Button x:Name="GameButton43" Content="GameButton 43" HorizontalAlignment="Left" Margin="300,525,0,0" VerticalAlignment="Top" Background="#FF4E4E3A" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" BorderBrush="White"/>
+        <Button x:Name="GameButton00" Content="GameButton 00" HorizontalAlignment="Left" Margin="0,125,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton02" Content="GameButton 02" HorizontalAlignment="Left" Margin="200,125,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton04" Content="GameButton 04" HorizontalAlignment="Center" Margin="400,125,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton12" Content="GameButton 12" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton14" Content="GameButton 14" HorizontalAlignment="Left" Margin="400,225,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton20" Content="GameButton 20" HorizontalAlignment="Left" Margin="0,325,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton22" Content="GameButton 22" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton24" Content="GameButton 24" HorizontalAlignment="Left" Margin="400,325,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton30" Content="GameButton 30" HorizontalAlignment="Left" Margin="0,425,0,100" Background="Yellow" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton32" Content="GameButton 32" HorizontalAlignment="Center" Margin="0,425,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton34" Content="GameButton 34" HorizontalAlignment="Left" Margin="400,425,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton40" Content="GameButton 40" HorizontalAlignment="Left" Margin="0,525,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton42" Content="GameButton 42" HorizontalAlignment="Center" Margin="0,525,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton44" Content="GameButton 44" HorizontalAlignment="Left" Margin="400,525,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton11" Content="GameButton 11" HorizontalAlignment="Left" Margin="100,225,0,0" VerticalAlignment="Top" Background="#FFD314D6" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton13" Content="GameButton 13" HorizontalAlignment="Left" Margin="300,225,0,0" VerticalAlignment="Top" Background="#FFD314D6" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton31" Content="GameButton 31" HorizontalAlignment="Left" Margin="100,425,0,0" VerticalAlignment="Top" Background="#FFD314D6" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton33" Content="GameButton 33" HorizontalAlignment="Left" Margin="300,425,0,0" VerticalAlignment="Top" Background="#FFD314D6" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+        <Button x:Name="GameButton10" Content="GameButton 10" HorizontalAlignment="Left" Margin="0,225,0,0" VerticalAlignment="Top" Background="Yellow" Height="100" Width="100" Cursor="" FontWeight="Normal" FontSize="0.01" Click="Change" BorderBrush="White"/>
+
+
+    </Grid>
+</Window>
